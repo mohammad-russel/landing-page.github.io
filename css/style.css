@@ -7,7 +7,7 @@
 
 .home {
   height: 800px;
-  background-image: url(/image/home.png);
+  background-image: url(image/home.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -94,7 +94,7 @@
 }
 .offer {
   height: 820px;
-  background-image: url(/image/offer.png);
+  background-image: url(image/offer.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -278,7 +278,7 @@
 }
 .contact {
   height: 820px;
-  background-image: url(/image/contact.png);
+  background-image: url(image/contact.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -406,7 +406,7 @@
 }
 .about {
   height: 100%;
-  background-image: url(/image/about.png);
+  background-image: url(image/about.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
