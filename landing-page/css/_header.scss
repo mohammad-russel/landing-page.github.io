@@ -1,0 +1,198 @@
+.header {
+    position: fixed;
+    width: 100%;
+    max-width: 1340px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    height: 80px;
+    z-index: 1;
+
+    .toggle {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 10%;
+        display: none;
+
+        .hide,
+        .show {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            ion-icon {
+                cursor: pointer;
+                background: linear-gradient(90deg, rgb(129, 202, 236), rgb(166, 95, 213));
+                padding: 1px 5px;
+                border-radius: 5px;
+                color: rgb(255, 255, 255);
+                font-size: 1.7rem;
+            }
+        }
+
+
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        height: 100%;
+
+        a {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 200px;
+            }
+        }
+
+    }
+
+    nav {
+
+        height: 100%;
+        display: flex;
+
+        ul {
+
+            display: flex;
+            align-items: center;
+
+            a {
+                text-decoration: none;
+                border-radius: 10px;
+                margin: 2px 50px;
+                font-weight: 600;
+                letter-spacing: 0.4px;
+                padding: 7px 15px;
+                position: relative;
+            }
+
+            a::before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 1%;
+                top: 30px;
+                left: 0;
+
+                transition: 0.4s;
+            }
+
+            a:hover::before {
+                width: 100%;
+
+            }
+
+            #contact {
+                background-image: linear-gradient(90deg, #6cc4dd, #856ef1);
+                letter-spacing: 1px;
+                padding: 15px 30px;
+                position: relative;
+                border-radius: 30px;
+                color: rgb(83, 83, 83);
+            }
+
+            #contact::before {
+                content: "Contact Us";
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                width: 97%;
+                height: 90%;
+                background: rgb(255, 249, 249);
+                border-radius: 30px;
+                top: 3px;
+                left: 3px;
+                transition: 0.3s;
+            }
+
+            #contact:hover::before {
+                background: rgba(0, 0, 0, 0);
+                color: rgb(255, 255, 255);
+            }
+        }
+    }
+}
+
+// ------------------------------
+@media only screen and (max-width: 950px) {
+    .header {
+        background: rgb(255, 255, 255);
+
+        .toggle {
+            display: block;
+            z-index: 12;
+            margin-left: 15px;
+
+            .hide,
+            .show {
+
+                ion-icon {}
+            }
+
+
+
+        }
+
+        .logo {
+            width: 90%;
+            display: flex;
+            justify-content: center;
+
+            img {}
+        }
+
+        nav {
+            display: none;
+            height: max-content;
+            background: rgb(255, 255, 255);
+            position: absolute;
+            top: 0;
+            width: 50%;
+            height: 100vh;
+            left: 0;
+            z-index: 1;
+
+            ul {
+                height: 100%;
+                margin-top: 100px;
+                flex-direction: column;
+
+                a {
+                    margin: 20px 0px;
+                    font-size: 1.1rem;
+                }
+
+                a::before {}
+
+                a:hover::before {}
+
+                #contact {
+                    background-image: none;
+                    width: 50%;
+                    text-align: center;
+                    color: #ca6ef1;
+                }
+
+                #contact::before {
+                    z-index: -1;
+                    content: '';
+                    background: rgba(0, 0, 0, 0);
+                }
+
+                #contact:hover::before {}
+            }
+        }
+    }
+}
