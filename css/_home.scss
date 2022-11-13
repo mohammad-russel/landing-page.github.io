@@ -1,0 +1,142 @@
+.section {}
+
+.home {
+
+    height: 800px;
+    background-image: url(/image/home.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+
+    .box {
+        width: 100%;
+        height: 370px;
+
+        text-align: center;
+        color: rgb(255, 255, 255);
+        letter-spacing: 0.4px;
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        p {
+            width: 100%;
+            max-width: 300px;
+            margin: auto;
+        }
+
+        .btn {
+            display: flex;
+            margin-top: 20px;
+            justify-content: center;
+
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                position: relative;
+
+                .icon {
+                    position: absolute;
+                    left: -10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: 0.5s;
+
+                    ion-icon {
+                        padding: 5px;
+                        background: linear-gradient(90deg, rgb(106, 197, 209), rgb(207, 113, 220));
+                        font-size: 1.8rem;
+                        border-radius: 50%;
+                        color: rgb(243, 243, 243);
+                    }
+
+                }
+
+                button {
+                    box-shadow: 0px 3px 15px -8px;
+                    border: none;
+                    border-radius: 30px;
+                    height: 38px;
+                    padding: 5px 35px;
+                    font-size: 0.9rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .links {
+            margin: 30px;
+
+            a {
+                text-decoration: none;
+                margin: 0px 3px;
+
+                ion-icon {
+                    color: rgb(244, 244, 244);
+                    border: 1px solid rgb(236, 236, 236);
+                    border-radius: 50%;
+                    padding: 3px;
+                    font-size: 0.9rem;
+                }
+            }
+        }
+
+    }
+}
+
+// ....................
+@media only screen and (max-width: 950px) {
+    .section {}
+
+    .home {
+        background-size: 100% 200% cover;
+        height: 730px;
+        
+        .box {
+
+
+            h1 {}
+
+            p {}
+
+            .btn {
+
+
+                a {
+
+
+                    .icon {
+
+
+                        ion-icon {}
+
+                    }
+
+                    button {}
+                }
+            }
+
+            .links {
+
+
+                a {
+
+                    ion-icon {}
+                }
+            }
+
+        }
+    }
+}
